@@ -1,27 +1,28 @@
-from distutils.core import setup
+import pathlib
+from setuptools import setup
+
+HERE = pathlib.Path(__file__).parent
+README = (HERE / "README.md").read_text()
 
 setup(
     name='star_scan',
-    packages=['star_scan'],
-    version='0.1',
+    version='1.1',
     license='MIT',
     description='Simple port scanning module',
+    long_description=README,
+    long_description_content_type="text/markdown",
     author='Wesley Reid',
+    packages=["star_scan"],
     author_email='wesleyreid0@gmail.com',
     url='https://github.com/starhound/star_scan',
-    download_url='https://github.com/user/reponame/archive/v_01.tar.gz',
+    download_url='https://github.com/starhound/star_scan/archive/main.zip',
     keywords=['NETWORK', 'UTILITY', 'PORT SCANNER'],
-    install_requires=[
-        'socket',
-        'sys',
-        'ipaddress',
-        'logging',
-    ],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
 )
