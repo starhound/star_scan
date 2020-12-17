@@ -23,6 +23,10 @@ import star_scan.scanner as scanner
 scanner.scan_host('127.0.0.1', 1, 1000)
 ```
 
+**will produce similair results as:**
+
+![Image of Results](https://i.imgur.com/73cgFzk.png)
+
 **To scan a network:**
 ```python3
 import star_scan.scanner as scanner 
