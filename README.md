@@ -5,6 +5,7 @@ You can find the original utilities (Python file and CLI version) from [here](ht
 
 To utilize this package, do: *pip3 install star_scan*
 
+**To scan a single client:**
 ```python3
 import star_scan.scanner as scanner
 
@@ -14,7 +15,7 @@ end_port = 1000
 scanner.scan_host(ip_address, start_port, end_port)
 ```
 
-**or directly passing values***
+**or directly passing values**
 
 ```python
 import star_scan.scanner as scanner
@@ -22,7 +23,7 @@ import star_scan.scanner as scanner
 scanner.scan_host('127.0.0.1', 1, 1000)
 ```
 
-To scan a network:
+**To scan a network:**
 ```python3
 import star_scan.scanner as scanner 
 
