@@ -1,4 +1,4 @@
-# star_scan
+# Star Scan
 Module form of the 'Port Scan' utility
 
 You can find the original utilities (Python file and CLI version) from [here](https://github.com/starhound/PortScan).
