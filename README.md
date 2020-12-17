@@ -13,3 +13,15 @@ start_port = 1
 end_port = 1000
 scanner.scan_host(ip_address, start_port, end_port)
 ```
+
+To scan a network:
+```python3
+import star_scan.scanner as scanner 
+
+#remove the last octet for scan_range()
+ip_address = '192.168.1'
+start_port = 1
+end_port = 1000
+
+#scans ports on all addresses from 192.168.1.1 to 192.168.1.255
+scanner.scan_range(ip_address, start_port, end_port)
